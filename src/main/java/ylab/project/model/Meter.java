@@ -2,9 +2,9 @@ package ylab.project.model;
 
 import java.util.List;
 
-public abstract class Meter {
-    private Long id;
-    private Long number;
+public interface  Meter {
+    Long getId();
+    Long getNumber();
 
 //    public abstract void test();
 }

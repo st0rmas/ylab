@@ -3,7 +3,6 @@ package ylab.project.service;
 import ylab.project.model.Role;
 import ylab.project.model.User;
 import ylab.project.repository.UserRepository;
-import ylab.project.storage.UserStorage;
 
 import java.util.Scanner;
 
@@ -16,13 +15,13 @@ public class UserService {
 
     public void authUser(){
         User user = getUser();
-        UserStorage.authenticatedUser = user;
+//        UserStorage.authenticatedUser = user;
     }
 
     public void regUser(){
         User user = getUser();
-        UserStorage.authenticatedUser = user;
-        userRepository.saveUser(user);
+//        UserStorage.authenticatedUser = user;
+//        userRepository.saveUser(user);
     }
 
 

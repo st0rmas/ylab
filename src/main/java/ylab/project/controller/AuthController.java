@@ -10,6 +10,8 @@ public class AuthController {
         this.userService = userService;
     }
 
+
+
     public void auth(){
         userService.authUser();
     }

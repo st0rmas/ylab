@@ -1,13 +1,14 @@
 package ylab.project.storage;
 
+
 import ylab.project.model.User;
 
-import java.util.*;
+import java.util.List;
 
-public class UserStorage {
-    public static User authenticatedUser;
-    public static List<User> users = new ArrayList<>(Arrays.asList(new User("admin", "admin")));
+// интерфейс, определяющий, как хранятся пользователи (хранение в памяти, в бд)
+public interface UserStorage {
 
-
+    void addUser(User user);
+    List<User> getUsers();
 
 }
