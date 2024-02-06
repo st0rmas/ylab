@@ -21,7 +21,6 @@ public class Main
         UserRepository userRepository = new UserRepository(userStorage);
         UserService userService = new UserService(userRepository);
         AuthController authController = new AuthController(userService);
-        ConsoleReader consoleReader = new ConsoleReader(authController);
-        consoleReader.start();
+        authController.start();
     }
 }

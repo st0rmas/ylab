@@ -3,7 +3,7 @@ package ylab.project.controller;
 import ylab.project.in.ConsoleReader;
 import ylab.project.service.MeasurementService;
 import ylab.project.service.UserService;
-import ylab.project.in.ConsoleMenuWriter;
+import ylab.project.storage.menu.ConsoleMenuWriter;
 
 public class UserController {
 
